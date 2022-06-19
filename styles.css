@@ -1,0 +1,180 @@
+/* Global styles */
+
+html {
+    scroll-padding-top: 6rem;
+}
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    position: fixed;
+    height: 5rem;
+    display: flex;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+} 
+
+.nav-bar {
+    padding: 1rem;
+    
+}
+
+header ul {
+    display: flex;
+
+}
+
+header a {
+    background-color: #3662FFFF;
+    margin: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 7%;
+    color: white;
+}
+
+header a:hover {
+    background-color: #182C73FF;
+    transition: background-color 0.6s ease;
+}
+
+@media only screen and (max-width: 927px) {
+    #wolf-icon, header h2 {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Main */
+main {
+    position: relative;
+    top: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+#banner {
+    background-image: url("./images/wolf-background.webp");
+    height: 87vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    display: flex;
+}
+
+#wolf-icon {
+    height: 5rem;
+}
+
+#banner .content {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* Gallery */
+#gallery {
+    position: relative;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+}
+
+#gallery img {
+    width: 30rem;
+    padding: 2rem;
+}
+
+#gallery img:hover {
+    width: 32rem;
+    transition: width 0.5s ease;;
+}
+
+.websites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Team */
+
+#team {
+    background-image: url("./images/contact-background.jpg");
+    background-size: cover;
+}
+
+#team h2 {
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem;
+}
+
+.team-member {
+    width: 20rem;
+}
+
+.team-member img {
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+
+}
+
+/* Contact */
+
+#contact {
+    margin: 8rem 0 4rem 0;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    border-top: 1px solid black;
+    padding-left: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+    background-color: white;
+    z-index: 50;
+}
